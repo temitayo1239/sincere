@@ -24,21 +24,28 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4">
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Mail className="h-5 w-5" />
-            </Button>
+            <a href="https://github.com/temitayo1239" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="mailto:sincerecore01@gmail.com">
+              <Button variant="ghost" size="icon" className="hover:text-primary">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
+
 
           {/* Back to Top */}
           <div className="flex justify-end">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="sm"
               onClick={scrollToTop}
               className="hover:bg-primary hover:text-primary-foreground"
